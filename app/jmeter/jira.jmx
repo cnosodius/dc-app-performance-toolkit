@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<jmeterTestPlan version="1.2" properties="5.0" jmeter="5.2.1">
+<jmeterTestPlan version="1.2" properties="5.0" jmeter="5.3">
   <hashTree>
     <TestPlan guiclass="TestPlanGui" testclass="TestPlan" testname="Test Plan" enabled="true">
       <stringProp name="TestPlan.comments"></stringProp>
@@ -2899,7 +2899,7 @@ vars.put(&quot;extend_action&quot;, extend_action);
               </hashTree>
             </hashTree>
             <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="jmeter_extension" enabled="true">
-              <stringProp name="IncludeController.includepath">extension/jira/extension.jmx</stringProp>
+              <stringProp name="IncludeController.includepath">D:\workspace_eclipse_jira\dc-app-performance-toolkit\app\extension\jira\extension.jmx</stringProp>
             </IncludeController>
             <hashTree/>
           </hashTree>
