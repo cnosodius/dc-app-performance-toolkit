@@ -5,6 +5,5 @@ outputs/
 .DS_Store
 *.swp
 *.iml
-*.log
 *.pyc
 local_*.yml
