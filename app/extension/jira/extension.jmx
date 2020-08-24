@@ -118,6 +118,16 @@
             <stringProp name="HTTPSampler.response_timeout"></stringProp>
           </HTTPSamplerProxy>
           <hashTree>
+            <JSR223PreProcessor guiclass="TestBeanGUI" testclass="JSR223PreProcessor" testname="JSR223 PreProcessor" enabled="true">
+              <stringProp name="cacheKey">true</stringProp>
+              <stringProp name="filename"></stringProp>
+              <stringProp name="parameters"></stringProp>
+              <stringProp name="script">import org.apache.commons.codec.binary.Base64;
+byte[] encodedUsernamePassword = Base64.encodeBase64(&quot;user:passwd&quot;.getBytes());
+vars.put(&quot;auth&quot;,new String(encodedUsernamePassword));</stringProp>
+              <stringProp name="scriptLanguage">groovy</stringProp>
+            </JSR223PreProcessor>
+            <hashTree/>
             <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
               <collectionProp name="HeaderManager.headers">
                 <elementProp name="Accept-Language" elementType="Header">
@@ -141,8 +151,8 @@
                   <stringProp name="Header.value">application/rdf+xml</stringProp>
                 </elementProp>
                 <elementProp name="X-AUSERNAME" elementType="Header">
-                  <stringProp name="Header.name">X-AUSERNAME</stringProp>
-                  <stringProp name="Header.value">admin</stringProp>
+                  <stringProp name="Header.name">Authorization</stringProp>
+                  <stringProp name="Header.value">Basic ${auth}</stringProp>
                 </elementProp>
               </collectionProp>
             </HeaderManager>
@@ -167,6 +177,16 @@
             <stringProp name="HTTPSampler.response_timeout"></stringProp>
           </HTTPSamplerProxy>
           <hashTree>
+            <JSR223PreProcessor guiclass="TestBeanGUI" testclass="JSR223PreProcessor" testname="JSR223 PreProcessor" enabled="true">
+              <stringProp name="cacheKey">true</stringProp>
+              <stringProp name="filename"></stringProp>
+              <stringProp name="parameters"></stringProp>
+              <stringProp name="script">import org.apache.commons.codec.binary.Base64;
+byte[] encodedUsernamePassword = Base64.encodeBase64(&quot;user:passwd&quot;.getBytes());
+vars.put(&quot;auth&quot;,new String(encodedUsernamePassword));</stringProp>
+              <stringProp name="scriptLanguage">groovy</stringProp>
+            </JSR223PreProcessor>
+            <hashTree/>
             <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
               <collectionProp name="HeaderManager.headers">
                 <elementProp name="" elementType="Header">
@@ -193,6 +213,10 @@
                   <stringProp name="Header.name">X-AUSERNAME</stringProp>
                   <stringProp name="Header.value">admin</stringProp>
                 </elementProp>
+                <elementProp name="Authorization" elementType="Header">
+                  <stringProp name="Header.name">Authorization</stringProp>
+                  <stringProp name="Header.value">Basic ${auth}</stringProp>
+                </elementProp>
               </collectionProp>
             </HeaderManager>
             <hashTree/>
@@ -216,6 +240,16 @@
             <stringProp name="HTTPSampler.response_timeout"></stringProp>
           </HTTPSamplerProxy>
           <hashTree>
+            <JSR223PreProcessor guiclass="TestBeanGUI" testclass="JSR223PreProcessor" testname="JSR223 PreProcessor" enabled="true">
+              <stringProp name="cacheKey">true</stringProp>
+              <stringProp name="filename"></stringProp>
+              <stringProp name="parameters"></stringProp>
+              <stringProp name="script">import org.apache.commons.codec.binary.Base64;
+byte[] encodedUsernamePassword = Base64.encodeBase64(&quot;user:passwd&quot;.getBytes());
+vars.put(&quot;auth&quot;,new String(encodedUsernamePassword));</stringProp>
+              <stringProp name="scriptLanguage">groovy</stringProp>
+            </JSR223PreProcessor>
+            <hashTree/>
             <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
               <collectionProp name="HeaderManager.headers">
                 <elementProp name="" elementType="Header">
@@ -241,6 +275,10 @@
                 <elementProp name="X-AUSERNAME" elementType="Header">
                   <stringProp name="Header.name">X-AUSERNAME</stringProp>
                   <stringProp name="Header.value">admin</stringProp>
+                </elementProp>
+                <elementProp name="Authorization" elementType="Header">
+                  <stringProp name="Header.name">Authorization</stringProp>
+                  <stringProp name="Header.value">Basic ${auth}</stringProp>
                 </elementProp>
               </collectionProp>
             </HeaderManager>
@@ -265,6 +303,16 @@
             <stringProp name="HTTPSampler.response_timeout"></stringProp>
           </HTTPSamplerProxy>
           <hashTree>
+            <JSR223PreProcessor guiclass="TestBeanGUI" testclass="JSR223PreProcessor" testname="JSR223 PreProcessor" enabled="true">
+              <stringProp name="cacheKey">true</stringProp>
+              <stringProp name="filename"></stringProp>
+              <stringProp name="parameters"></stringProp>
+              <stringProp name="script">import org.apache.commons.codec.binary.Base64;
+byte[] encodedUsernamePassword = Base64.encodeBase64(&quot;user:passwd&quot;.getBytes());
+vars.put(&quot;auth&quot;,new String(encodedUsernamePassword));</stringProp>
+              <stringProp name="scriptLanguage">groovy</stringProp>
+            </JSR223PreProcessor>
+            <hashTree/>
             <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
               <collectionProp name="HeaderManager.headers">
                 <elementProp name="" elementType="Header">
@@ -290,6 +338,10 @@
                 <elementProp name="X-AUSERNAME" elementType="Header">
                   <stringProp name="Header.name">X-AUSERNAME</stringProp>
                   <stringProp name="Header.value">admin</stringProp>
+                </elementProp>
+                <elementProp name="Authorization" elementType="Header">
+                  <stringProp name="Header.name">Authorization</stringProp>
+                  <stringProp name="Header.value">Basic ${auth}</stringProp>
                 </elementProp>
               </collectionProp>
             </HeaderManager>
@@ -314,6 +366,16 @@
             <stringProp name="HTTPSampler.response_timeout"></stringProp>
           </HTTPSamplerProxy>
           <hashTree>
+            <JSR223PreProcessor guiclass="TestBeanGUI" testclass="JSR223PreProcessor" testname="JSR223 PreProcessor" enabled="true">
+              <stringProp name="cacheKey">true</stringProp>
+              <stringProp name="filename"></stringProp>
+              <stringProp name="parameters"></stringProp>
+              <stringProp name="script">import org.apache.commons.codec.binary.Base64;
+byte[] encodedUsernamePassword = Base64.encodeBase64(&quot;user:passwd&quot;.getBytes());
+vars.put(&quot;auth&quot;,new String(encodedUsernamePassword));</stringProp>
+              <stringProp name="scriptLanguage">groovy</stringProp>
+            </JSR223PreProcessor>
+            <hashTree/>
             <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
               <collectionProp name="HeaderManager.headers">
                 <elementProp name="" elementType="Header">
@@ -339,6 +401,10 @@
                 <elementProp name="X-AUSERNAME" elementType="Header">
                   <stringProp name="Header.name">X-AUSERNAME</stringProp>
                   <stringProp name="Header.value">admin</stringProp>
+                </elementProp>
+                <elementProp name="Authorization" elementType="Header">
+                  <stringProp name="Header.name">Authorization</stringProp>
+                  <stringProp name="Header.value">Basic ${auth}</stringProp>
                 </elementProp>
               </collectionProp>
             </HeaderManager>
@@ -363,6 +429,16 @@
             <stringProp name="HTTPSampler.response_timeout"></stringProp>
           </HTTPSamplerProxy>
           <hashTree>
+            <JSR223PreProcessor guiclass="TestBeanGUI" testclass="JSR223PreProcessor" testname="JSR223 PreProcessor" enabled="true">
+              <stringProp name="cacheKey">true</stringProp>
+              <stringProp name="filename"></stringProp>
+              <stringProp name="parameters"></stringProp>
+              <stringProp name="script">import org.apache.commons.codec.binary.Base64;
+byte[] encodedUsernamePassword = Base64.encodeBase64(&quot;user:passwd&quot;.getBytes());
+vars.put(&quot;auth&quot;,new String(encodedUsernamePassword));</stringProp>
+              <stringProp name="scriptLanguage">groovy</stringProp>
+            </JSR223PreProcessor>
+            <hashTree/>
             <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
               <collectionProp name="HeaderManager.headers">
                 <elementProp name="" elementType="Header">
@@ -388,6 +464,10 @@
                 <elementProp name="X-AUSERNAME" elementType="Header">
                   <stringProp name="Header.name">X-AUSERNAME</stringProp>
                   <stringProp name="Header.value">admin</stringProp>
+                </elementProp>
+                <elementProp name="Authorization" elementType="Header">
+                  <stringProp name="Header.name">Authorization</stringProp>
+                  <stringProp name="Header.value">Basic ${auth}</stringProp>
                 </elementProp>
               </collectionProp>
             </HeaderManager>
@@ -412,6 +492,16 @@
             <stringProp name="HTTPSampler.response_timeout"></stringProp>
           </HTTPSamplerProxy>
           <hashTree>
+            <JSR223PreProcessor guiclass="TestBeanGUI" testclass="JSR223PreProcessor" testname="JSR223 PreProcessor" enabled="true">
+              <stringProp name="cacheKey">true</stringProp>
+              <stringProp name="filename"></stringProp>
+              <stringProp name="parameters"></stringProp>
+              <stringProp name="script">import org.apache.commons.codec.binary.Base64;
+byte[] encodedUsernamePassword = Base64.encodeBase64(&quot;user:passwd&quot;.getBytes());
+vars.put(&quot;auth&quot;,new String(encodedUsernamePassword));</stringProp>
+              <stringProp name="scriptLanguage">groovy</stringProp>
+            </JSR223PreProcessor>
+            <hashTree/>
             <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
               <collectionProp name="HeaderManager.headers">
                 <elementProp name="" elementType="Header">
@@ -437,6 +527,10 @@
                 <elementProp name="X-AUSERNAME" elementType="Header">
                   <stringProp name="Header.name">X-AUSERNAME</stringProp>
                   <stringProp name="Header.value">admin</stringProp>
+                </elementProp>
+                <elementProp name="Authorization" elementType="Header">
+                  <stringProp name="Header.name">Authorization</stringProp>
+                  <stringProp name="Header.value">Basic ${auth}</stringProp>
                 </elementProp>
               </collectionProp>
             </HeaderManager>
