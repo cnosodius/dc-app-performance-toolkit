@@ -406,7 +406,7 @@ vars.put(&quot;auth&quot;,new String(encodedUsernamePassword));</stringProp>
                 <stringProp name="filename"></stringProp>
                 <stringProp name="parameters"></stringProp>
                 <stringProp name="script">import org.apache.commons.codec.binary.Base64;
-byte[] encodedUsernamePassword = Base64.encodeBase64(&quot;admin:admin&quot;.getBytes());
+byte[] encodedUsernamePassword = Base64.encodeBase64(${username}+&quot;:&quot;+${password}.getBytes());
 vars.put(&quot;auth&quot;,new String(encodedUsernamePassword));</stringProp>
                 <stringProp name="scriptLanguage">groovy</stringProp>
               </JSR223PreProcessor>
