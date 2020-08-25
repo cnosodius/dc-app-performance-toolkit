@@ -123,7 +123,8 @@
               <stringProp name="filename"></stringProp>
               <stringProp name="parameters"></stringProp>
               <stringProp name="script">import org.apache.commons.codec.binary.Base64;
-byte[] encodedUsernamePassword = Base64.encodeBase64(vars.get(&quot;username&quot;)+&quot;:&quot;+vars.get(&quot;password&quot;).getBytes());
+String value = vars.get(&quot;username&quot;)+&quot;:&quot;+vars.get(&quot;password&quot;);
+byte[] encodedUsernamePassword = Base64.encodeBase64(value.getBytes());
 vars.put(&quot;auth&quot;,new String(encodedUsernamePassword));</stringProp>
               <stringProp name="scriptLanguage">groovy</stringProp>
             </JSR223PreProcessor>
@@ -166,7 +167,8 @@ vars.put(&quot;auth&quot;,new String(encodedUsernamePassword));</stringProp>
               <stringProp name="filename"></stringProp>
               <stringProp name="parameters"></stringProp>
               <stringProp name="script">import org.apache.commons.codec.binary.Base64;
-byte[] encodedUsernamePassword = Base64.encodeBase64(vars.get(&quot;username&quot;)+&quot;:&quot;+vars.get(&quot;password&quot;).getBytes());
+String value = vars.get(&quot;username&quot;)+&quot;:&quot;+vars.get(&quot;password&quot;);
+byte[] encodedUsernamePassword = Base64.encodeBase64(value.getBytes());
 vars.put(&quot;auth&quot;,new String(encodedUsernamePassword));</stringProp>
               <stringProp name="scriptLanguage">groovy</stringProp>
             </JSR223PreProcessor>
@@ -229,7 +231,8 @@ vars.put(&quot;auth&quot;,new String(encodedUsernamePassword));</stringProp>
               <stringProp name="filename"></stringProp>
               <stringProp name="parameters"></stringProp>
               <stringProp name="script">import org.apache.commons.codec.binary.Base64;
-byte[] encodedUsernamePassword = Base64.encodeBase64(vars.get(&quot;username&quot;)+&quot;:&quot;+vars.get(&quot;password&quot;).getBytes());
+String value = vars.get(&quot;username&quot;)+&quot;:&quot;+vars.get(&quot;password&quot;);
+byte[] encodedUsernamePassword = Base64.encodeBase64(value.getBytes());
 vars.put(&quot;auth&quot;,new String(encodedUsernamePassword));</stringProp>
               <stringProp name="scriptLanguage">groovy</stringProp>
             </JSR223PreProcessor>
@@ -292,7 +295,8 @@ vars.put(&quot;auth&quot;,new String(encodedUsernamePassword));</stringProp>
               <stringProp name="filename"></stringProp>
               <stringProp name="parameters"></stringProp>
               <stringProp name="script">import org.apache.commons.codec.binary.Base64;
-byte[] encodedUsernamePassword = Base64.encodeBase64(vars.get(&quot;username&quot;)+&quot;:&quot;+vars.get(&quot;password&quot;).getBytes());
+String value = vars.get(&quot;username&quot;)+&quot;:&quot;+vars.get(&quot;password&quot;);
+byte[] encodedUsernamePassword = Base64.encodeBase64(value.getBytes());
 vars.put(&quot;auth&quot;,new String(encodedUsernamePassword));</stringProp>
               <stringProp name="scriptLanguage">groovy</stringProp>
             </JSR223PreProcessor>
@@ -355,7 +359,8 @@ vars.put(&quot;auth&quot;,new String(encodedUsernamePassword));</stringProp>
               <stringProp name="filename"></stringProp>
               <stringProp name="parameters"></stringProp>
               <stringProp name="script">import org.apache.commons.codec.binary.Base64;
-byte[] encodedUsernamePassword = Base64.encodeBase64(vars.get(&quot;username&quot;)+&quot;:&quot;+vars.get(&quot;password&quot;).getBytes());
+String value = vars.get(&quot;username&quot;)+&quot;:&quot;+vars.get(&quot;password&quot;);
+byte[] encodedUsernamePassword = Base64.encodeBase64(value.getBytes());
 vars.put(&quot;auth&quot;,new String(encodedUsernamePassword));</stringProp>
               <stringProp name="scriptLanguage">groovy</stringProp>
             </JSR223PreProcessor>
